@@ -17,16 +17,10 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    background-color: var(--red);
-
     color: white;
 
     display: flex;
-    flex-direction: column; /* ########### */
     align-items: center;
-
-    background: var(--red) url('./images/bg-intro-mobile.png') center  repeat;
-    background-size: 100%;
 }
 
 div {
@@ -34,7 +28,7 @@ div {
 }
 
 section {
-    width: 375px;  /* ########### */
+
     margin-bottom: 2rem;
 
     display: flex;
@@ -92,12 +86,12 @@ input {
 }
 
 input:focus {
-    border: 2px solid var(--dbl);
+    border: 1px solid var(--dbl);
 }
 
 .signup__footer {
     color: var(--gbl);
-    padding: 1rem 3.5rem 0 1rem;
+    padding: .7rem 3.5rem 0 1rem;
     font-size: .7rem;
     font-weight: 500;
     line-height: 1.2rem;
@@ -138,3 +132,32 @@ button:active {
     transform: translateY(.3rem);
     box-shadow: 0 0 hsl(154, 59%, 41%);
 }
+
+@media (max-width: 1399px) {
+    body {
+        flex-direction: column;
+
+        background: var(--red) url('./images/bg-intro-mobile.png') center  no-repeat;
+
+    }
+    section {
+        width: 375px;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    body {
+        min-height: 100vh;
+        min-width: 100vw;
+        flex-direction: row;
+        justify-content: center;
+
+
+        background: var(--red) url('./images/bg-intro-desktop.png') center no-repeat;
+        background-size: cover;
+    }
+    section {
+        width: 575px;
+    }
+} 
