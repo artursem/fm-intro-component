@@ -91,18 +91,10 @@ input:focus {
     border: 1px solid var(--dbl);
 }
 
-.signup__footer {
-    color: var(--gbl);
-    padding: .7rem 3.5rem 0 1rem;
-    font-size: .7rem;
-    font-weight: 500;
-    line-height: 1.2rem;
-}
-
-.signup__footer a {
+.input-error, .input-error:focus {
+    border: 1px solid var(--red);
+    background: url('./images/icon-error.svg') right 10px center  no-repeat;
     color: var(--red);
-    text-decoration: none;
-    font-weight: 600;
 }
 
 button {
@@ -134,6 +126,31 @@ button:active {
     transform: translateY(.3rem);
     box-shadow: 0 0 hsl(154, 59%, 41%);
 }
+
+.error {
+    display: block;
+    color: var(--red);
+    text-align: right;
+    font-size: .7rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.signup__footer {
+    color: var(--gbl);
+    padding: .7rem 1rem 0 1rem;
+
+    font-size: .7rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+
+.signup__footer a {
+    color: var(--red);
+    text-decoration: none;
+    font-weight: 600;
+}
+
 
 @media (max-width: 799px) {
     body {
