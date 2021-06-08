@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Intro component with sign up form | Frontend Mentor</title>
-
+  <script src="app.js" defer></script>
 </head>
 <body>
   <section class="txt">
@@ -25,10 +25,14 @@
     </div>
     <div class="signup__card">
       <form action="#">
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
-        <input type="text" placeholder="Email adress">
-        <input type="password" placeholder="Password">
+        <input type="text" placeholder="First Name" id="first-name">
+        <div class="error display-none">First name cannot be empty</div>
+        <input type="text" placeholder="Last Name" id="last-name">
+        <div class="error display-none">Last name cannot be empty</div>
+        <input type="text" placeholder="Email adress" id="email">
+        <div class="error display-none">Looks like this is not an email</div>
+        <input type="password" placeholder="Password" id="password">
+        <div class="error display-none">Password cannot be empty</div>
         <button>claim your free trial</button>
       </form>
       <div class="signup__footer">
