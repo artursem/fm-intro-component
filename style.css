@@ -21,6 +21,8 @@ body {
 
     display: flex;
     align-items: center;
+
+    padding: 1rem;
 }
 
 div {
@@ -133,7 +135,7 @@ button:active {
     box-shadow: 0 0 hsl(154, 59%, 41%);
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 799px) {
     body {
         flex-direction: column;
 
@@ -146,7 +148,7 @@ button:active {
 }
 
 
-@media (min-width: 1400px) {
+@media (min-width: 800px) {
     body {
         min-height: 100vh;
         min-width: 100vw;
